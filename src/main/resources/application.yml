@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: spock-study
+
+  profile:
+    active: dev
+
+server:
+  port: 8080
