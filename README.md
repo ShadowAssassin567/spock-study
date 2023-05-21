@@ -149,11 +149,11 @@ Spock通过内置的Blocks来实现上面的四个阶段，Blocks与Phases的对
 | expect: | Stimulus, Response |
 | cleanup: | Cleanup |
 | where: | Setup, Stimulus, Response, Cleanup |
-
-在方法名与第一个显示定义的Block之间的代码默认为 given Block
 每个方法至少有一个Block，且Block之间不能嵌套。
 
 ##### given
+用来定义变量，做一些初始化工作。
+在方法名与第一个显示定义的非 given Block之间的代码默认为 given Block
 ```groovy
 given:
     def stack = new Stack()
